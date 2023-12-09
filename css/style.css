@@ -55,6 +55,7 @@ main {
 .post-author-date {
     font-size: 14px;
     margin: 3px auto;
+    font-style: italic;
 }
 .post-tag {
     font-size: 13.5px;

@@ -64,10 +64,11 @@ main {
 }
 .table-column {
     border: 1px solid black;
-    padding: 3px;
+    padding: 5px;
     font-size: 14px;
 }
-#new-post {
+#new-post,
+#update-post {
     font-size: 20px;
     font-weight: 700;
     text-align: left;
@@ -89,7 +90,8 @@ main {
     margin: 10px auto;
     background-color: whitesmoke;
 }
-#create-back {
+#create-back,
+#update-back {
     font-size: 22px;
     line-height: 2em;
     text-align: center;
