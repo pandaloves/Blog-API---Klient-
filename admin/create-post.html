@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <p><a href="../index.html">Blog page</a></p>
+        </div>
+    </header>
+    <main>
+    <h1 id="new-post">New post</h1>
+     <!-- The form to create a new post -->
+    <form id="create-form">
+        <label for="create-title-input" class="create-label">Title</label>
+        <input type="text" name="create-title-input" class="create-input" id="title-input" required/>
+        <label for="create-author-input" class="create-label">Author</label>
+        <input type="text" name="create-author-input" class="create-input" id="author-input" required/>
+        <label for="create-content" class="create-label">Content</label>
+        <textarea name="create-content" id="create-content-textarea" cols="30" rows="10" required></textarea>
+        <label for="create-tags" class="create-label">Tags (Hold down the Ctrl (windows) /
+            Command (Mac) button to select multiple options.)
+         <select name="create-tags" form="create-form" id="create-tags-select" size="9" multiple required>
+            <option value="Economics">Economics</option>
+            <option value="Politics">Politics</option>
+            <option value="Science">Science</option>
+            <option value="Life">Life</option>
+            <option value="Food">Food</option>
+            <option value="Art">Art</option>
+            <option value="Cars">Cars</option>
+            <option value="Travel">Travel</option>
+            <option value="Study">Study</option>
+         </select>
+        </label>
+        <input type="submit" value="Create" class="submit">
+        <a href="index.html"><p id="create-back">&#x2190; back</p></a>
+    </form>
+   
+    <script src="js/create-post.js"></script>
+</body>
+</html>

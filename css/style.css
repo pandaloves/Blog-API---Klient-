@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    box-sizing: border;
+}
+body {
+    background-color:rgb(246, 249, 244);
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+a {
+   cursor: pointer;
+   text-decoration: none;
+}
+a:link{
+  color: blue;
+}
+a:hover {
+    color: orangered;
+  }
+header {
+    top: 0;
+    padding-top: 28px;
+}
+#header-container {
+    border-bottom: 1px solid rgb(101, 99, 99);
+    text-align: end;
+}
+main {
+    margin: 3px auto;
+    padding: 10px;
+}
+#my-blog {
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.posts {
+    margin: 5px auto;
+}
+.post {
+    max-width: 500px;
+    margin: 15px 3px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(158, 155, 155);
+}
+.post-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 3px auto;
+}
+.post-author-date {
+    font-size: 14px;
+    margin: 3px auto;
+}
+.post-tag {
+    font-size: 13.5px;
+    margin: 3px auto;
+}
+.post-content{
+    font-size: 15px;
+    margin: 3px auto;
+}
+.read-more {
+    font-size: 15px;
+}
+.post-container {
+    margin: 0 auto;
+
+}
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px auto;
+}
+.author-date {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 8px;
+}
+.tag {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 8px;
+}
+.content {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 8px;
+}
+.back {
+    font-size: 22px;
+    line-height: 2em;
+    text-align: center;
+}
+
+/*Media Queries for responsive design */
+@media only screen and (max-width: 992px) {
+    body {
+        margin: auto;
+        width: 70%;
+    }
+    main {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: auto;
+        width: 80%;
+    }
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    main {
+        margin: 0;
+    }
+}

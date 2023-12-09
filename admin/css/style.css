@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    box-sizing: border;
+}
+body {
+    background-color:rgb(246, 249, 244);
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+a {
+   cursor: pointer;
+   text-decoration: none;
+}
+a:link{
+  color: blue;
+}
+a:hover {
+    color: orangered;
+  }
+header {
+    top: 0;
+    padding-top: 28px;
+}
+#header-container {
+    border-bottom: 1px solid rgb(101, 99, 99);
+    text-align: end;
+}
+main {
+    margin: 3px auto;
+    padding: 10px;
+}
+#blog-posts {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px auto;
+}
+#new-post-link {
+    text-align: right;
+    margin: 10px auto;
+}
+#post-table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 3px auto;
+    padding: 2px;
+    background-color: white;
+}
+.table-head {
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.table-row {
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.table-column {
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 14px;
+}
+#new-post {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 auto 16px;
+}
+.create-label {
+    text-align: left;
+    line-height: 2em;
+}
+.create-input,
+#create-content-textarea,
+#create-tags-select  {
+    width: 100%;
+    padding: 5px;
+}
+.submit {
+    width: 100%;
+    height:50px;
+    margin: 10px auto;
+    background-color: whitesmoke;
+}
+#create-back {
+    font-size: 22px;
+    line-height: 2em;
+    text-align: center;
+}
+
+select[multiple]:focus option:checked {
+    background: rgb(5, 47, 237) linear-gradient(0deg, rgb(16, 9, 224) 0%, rgb(12, 38, 203) 100%);
+  }
+#create-content-textarea {
+    font-size: 16px;
+    color: rgb(50, 48, 48);
+}
+/*Media Queries for responsive design */
+@media only screen and (max-width: 992px) {
+    body {
+        margin: auto;
+        width: 70%;
+    }
+    main {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: auto;
+        width: 80%;
+    }
+    main {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    main {
+        margin: 0;
+    }
+}
