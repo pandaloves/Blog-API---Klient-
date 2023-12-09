@@ -19,8 +19,8 @@ async function fetchPost() {
     postElement.classList.add("post-container");
     postElement.innerHTML = `
       <h2 class="title">${post.title}</h2>
-      <i class="author-date">${post.author} | ${post.date}</i>
-      <p class="tag">tags: ${post.tags.join(", ")}</p>
+      <i class="author-date"><b>${post.author}</b> | ${post.date}</i>
+      <p class="tag"><b>tags:</b> ${post.tags.join(", ")}</p>
       <p class="content">${post.content}</p>
       <a href="index.html"><p class="back">&#8592; back</p><a>
     `;
