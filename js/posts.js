@@ -18,8 +18,8 @@ async function fetchPosts() {
           posts.innerHTML += `
           <article class="post">
              <h3 class="post-title">${post.title}</h3>
-             <i class="post-author-date">${post.author} | ${post.date} </i>
-             <p class="post-tag">tags: ${post.tags.join(", ")}</p>
+             <i class="post-author-date"><b>${post.author}</b> | ${post.date} </i>
+             <p class="post-tag"><b>tags:</b> ${post.tags.join(", ")}</p>
              <p class="post-content">${post.content.slice(0, 101)}...<a href="post.html?id=${post._id}" ><span class="read-more">read more</span></a></p>
           </article>
           `;  }
