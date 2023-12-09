@@ -1,5 +1,5 @@
 "use strict";
-
+// Fetch all the posts
 async function fetchPosts() {
     try {
         const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/`);

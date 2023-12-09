@@ -79,20 +79,25 @@ main {
     line-height: 2em;
 }
 .create-input,
-#create-content-textarea,
-#create-tags-select  {
+#create-content-textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid black;
     border-radius: 10px;
 }
+#create-tags-select  {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+}
 .submit {
     border: 1px solid rgb(5, 47, 237);
     border-radius: 10px;
     width: 100%;
-    height:50px;
+    height: 50px;
     margin: 10px auto;
     background-color: whitesmoke;
+    z-index: 999;
 }
 #create-back,
 #update-back {

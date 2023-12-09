@@ -2,7 +2,7 @@
 // Get the post's id
 const urlParams = new URLSearchParams(location.search);
 const postId =urlParams.get('id');
-// 
+// Fetch the content of the original post
 async function fetchPost() {
     try {
         const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/${postId}`);
@@ -28,6 +28,7 @@ async function fetchPost() {
 
 fetchPost();
 
+// Update the content of the post
 async function updatePost(e) {
   e.preventDefault();
   let form = e.target;

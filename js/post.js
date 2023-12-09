@@ -1,5 +1,5 @@
 "use strict";
-
+// Fetch the specific post
 const urlParams = new URLSearchParams(window.location.search);
     const postId = urlParams.get('id');
 
@@ -12,7 +12,9 @@ async function fetchPost() {
         console.error('Error fetching post:', error);
       };
   }
-  
+ fetchPost();
+
+// Show the specific post 
   function displayPost(post) {
     const postContainer = document.querySelector("#my-blog");
     const postElement = document.createElement("div");
@@ -28,5 +30,4 @@ async function fetchPost() {
     postContainer.appendChild(postElement);
   }
   
-  fetchPost();
     

@@ -1,5 +1,5 @@
 "use strict";
-
+// Fetch the posts and put them into the correct places
 async function fetchPosts() {
     try {
         const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/`);
@@ -37,7 +37,7 @@ async function fetchPosts() {
     }catch(error) {
      console.log(error);
     }
-
+   // The delete link
     async function deleteLink(e) {
         if(e.target && e.target.matches("[data-id]")) {
             let postId = e.target.dataset.id;

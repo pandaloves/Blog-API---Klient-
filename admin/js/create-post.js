@@ -1,5 +1,5 @@
 "use strict";
-
+// Create a post
 async function createPost(e) {
   e.preventDefault();
   let form = e.target;
