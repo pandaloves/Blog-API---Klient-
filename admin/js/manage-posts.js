@@ -43,7 +43,7 @@ async function fetchPosts() {
             let postId = e.target.dataset.id;
             try{
                 await fetch(`https://blog-api-assignment.up.railway.app/posts/${postId}`,  {
-                    method: "DELETE", // GET, POST, PATCH, DELETE, etc.
+                    method: "DELETE", 
                   }); 
                 e.target.parentNode.parentNode.remove();
             }catch(error) {
