@@ -2,7 +2,7 @@
 // Fetch the posts and put them into the correct places
 async function fetchPosts() {
     try {
-        const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/`);
+        const response = await fetch(`https://blog-api-assignment.up.railway.app/posts`);
         if (!response.ok) {
             throw new Error('Opps, something whent wrong!')
         }
@@ -26,7 +26,7 @@ async function fetchPosts() {
           <tr class="table-row">
              <td class="table-column">${post.title}</td>
              <td class="table-column">${post.author}</td>
-             <td class="table-column">${post.tags.join(", ")}</td>
+             <td class="table-column">${post.tags}</td>
              <td class="table-column">${year}-${month}-${date} ${hour}:${minute}</td>
              <td class="table-column">
                  <a href="update-post.html?id=${post._id}" class="update">Update</a><br>|
@@ -35,7 +35,7 @@ async function fetchPosts() {
           </tr>
           `;  }
     }catch(error) {
-     console.log(error);
+     console.log('Error fetching post:', error);
     }
    // The delete link
     async function deleteLink(e) {
@@ -47,7 +47,7 @@ async function fetchPosts() {
                   }); 
                 e.target.parentNode.parentNode.remove();
             }catch(error) {
-                console.log('Error fetching blog:', error);
+                console.log('Error fetching post:', error);
             }
         }
     }

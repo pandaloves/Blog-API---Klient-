@@ -66,7 +66,6 @@ main {
 .table-column {
     border: 1px solid black;
     padding: 5px;
-    font-size: 14px;
 }
 #new-post,
 #update-post {
@@ -115,10 +114,16 @@ select[multiple]:focus option:checked {
     color: rgb(50, 48, 48);
 }
 /*Media Queries for responsive design */
+@media only screen and (max-width: 1200px) {
+    body {
+        margin: auto;
+        width: 80%;
+    }
+}
 @media only screen and (max-width: 992px) {
     body {
         margin: auto;
-        width: 70%;
+        width: 90%;
     }
     main {
         margin: 0;
@@ -127,10 +132,11 @@ select[multiple]:focus option:checked {
 @media only screen and (max-width: 768px) {
     body {
         margin: auto;
-        width: 80%;
+        width: 95%;
     }
-    main {
-        margin: 0;
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -139,7 +145,36 @@ select[multiple]:focus option:checked {
         padding: 0;
         width: 100%;
     }
-    main {
-        margin: 0;
+    #post-table {
+       table-layout: fixed;
+       max-width: 180px;
     }
+    th, td {
+       width: 95px;
+       overflow: hidden;
+    }
+}
+@media only screen and (max-width: 430px) {
+    #post-table {
+        max-width: 170px;
+     }
+     th, td {
+        width: 66px;
+     }
+}
+@media only screen and (max-width: 378px) {
+    #post-table {
+        max-width: 160px;
+     }
+     th, td {
+        width: 61px;
+     }
+}
+@media only screen and (max-width: 300px) {
+    #post-table {
+        max-width: 120px;
+     }
+     th, td {
+        width: 45px;
+     }
 }

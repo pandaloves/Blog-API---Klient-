@@ -111,23 +111,23 @@ main {
 @media only screen and (max-width: 768px) {
     body {
         margin: auto;
-        width: 80%;
+        width: 75%;
     }
     header {
         padding-left: 10px;
         padding-right: 10px;
     }
-    main {
-        margin: 0;
-    }
 }
 @media only screen and (max-width: 600px) {
     body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        margin: auto;
+        padding: 3px;
+        width: 85%;
     }
-    main {
-        margin: 0;
+}
+@media only screen and (max-width: 300px) {
+    body {
+        margin: auto;
+        width: 90%;
     }
 }

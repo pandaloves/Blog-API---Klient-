@@ -11,7 +11,7 @@ async function createPost(e) {
           "content": formData.get('create-content'),
           "tags": formData.getAll('create-tags') 
       };
-      await fetch(`https://blog-api-assignment.up.railway.app/posts/`, {
+      await fetch(`https://blog-api-assignment.up.railway.app/posts`, {
           method: "POST",
           headers: {
               "Content-Type": "application/json"
