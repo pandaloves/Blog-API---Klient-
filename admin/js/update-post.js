@@ -22,7 +22,7 @@ async function fetchPost() {
             }
         }
     } catch(error) {
-        console.log('Error fetching blog:', error)
+        console.log('Error fetching post:', error)
     }  
 }
 
@@ -49,7 +49,7 @@ async function updatePost(e) {
       });
       location.replace('index.html'); 
   } catch (error) {
-      console.log('Error fetching blog:', error);
+      console.log('Error fetching post:', error);
   }
 }
 
