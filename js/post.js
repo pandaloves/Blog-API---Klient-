@@ -6,6 +6,9 @@ const urlParams = new URLSearchParams(window.location.search);
 async function fetchPost() {
       try {
       const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/${postId}`);
+      if (!response.ok) {
+        throw new Error('Opps, something whent wrong!')
+    }
       const data = await response.json();
       displayPost(data);
       }catch(error) {

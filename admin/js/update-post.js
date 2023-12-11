@@ -6,6 +6,9 @@ const postId =urlParams.get('id');
 async function fetchPost() {
     try {
         const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/${postId}`);
+        if (!response.ok) {
+            throw new Error('Opps, something whent wrong!')
+        }
         const post = await response.json();
         console.log(post);
 
@@ -31,10 +34,10 @@ fetchPost();
 // Update the content of the post
 async function updatePost(e) {
   e.preventDefault();
-  let form = e.target;
+  const form = e.target;
   try {
-      let formData = new FormData(form);
-      let data = {
+      const formData = new FormData(form);
+      const data = {
           "title": formData.get('create-title-input'),
           "author": formData.get('create-author-input'),
           "content": formData.get('create-content'),
