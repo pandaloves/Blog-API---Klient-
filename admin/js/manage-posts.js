@@ -22,11 +22,24 @@ async function fetchPosts() {
             date = date < 10 ? '0' + date : date;
             hour = hour < 10 ? '0' + hour : hour;
             minute = minute < 10 ? '0' + minute : minute;
+            // Check if post.tags exists and if post.tags is not null or undefined
+            const tag = () => {
+            if (post.tags && Array.isArray(post.tags) && post.tags.length > 0) {
+            // Join the tags with ", "
+            const tags = post.tags.join(", ");
+            // return tags
+            return tags;
+            } else {
+            // Deal with the case where tags are null, undefined, or an empty array
+            return "";
+            }
+            }
+
             tableBody.innerHTML += `
           <tr class="table-row">
              <td class="table-column">${post.title}</td>
              <td class="table-column">${post.author}</td>
-             <td class="table-column">${post.tags}</td>
+             <td class="table-column">${tag()}</td>
              <td class="table-column">${year}-${month}-${date} ${hour}:${minute}</td>
              <td class="table-column">
                  <a href="update-post.html?id=${post._id}" class="update">Update</a><br>|
