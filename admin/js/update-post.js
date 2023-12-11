@@ -20,8 +20,6 @@ async function fetchPost() {
         for (let option of options) {
             if (post.tags.includes(option.value)) {
                 option.selected = true;
-            }else {
-              console.log("Without the choices.")
             }
         }
     } catch(error) {
