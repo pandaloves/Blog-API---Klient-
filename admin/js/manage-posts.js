@@ -40,7 +40,7 @@ async function fetchPosts() {
    // The delete link
     async function deleteLink(e) {
         if(e.target && e.target.matches("[data-id]")) {
-            let postId = e.target.dataset.id;
+            const postId = e.target.dataset.id;
             try{
                 await fetch(`https://blog-api-assignment.up.railway.app/posts/${postId}`,  {
                     method: "DELETE", 

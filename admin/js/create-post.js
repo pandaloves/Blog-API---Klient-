@@ -2,10 +2,10 @@
 // Create a post
 async function createPost(e) {
   e.preventDefault();
-  let form = e.target;
+  const form = e.target;
   try {
-      let formData = new FormData(form);
-      let data = {
+      const formData = new FormData(form);
+      const data = {
           "title": formData.get('create-title-input'),
           "author": formData.get('create-author-input'),
           "content": formData.get('create-content'),
