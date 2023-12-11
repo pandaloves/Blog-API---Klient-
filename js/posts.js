@@ -17,11 +17,24 @@ async function fetchPosts() {
           console.log(post);
           const string = JSON.stringify(post.content);
           const content = string.slice(0, 101);
+          // Check if post.tags exists and if post.tags is not null or undefined
+          const tag = () => {
+          if (post.tags && Array.isArray(post.tags) && post.tags.length > 0) {
+           // Join the tags with ", "
+           const tags = post.tags.join(", ");
+           // return tags
+           return tags;
+           } else {
+           // Deal with the case where tags are null, undefined, or an empty array
+           return "";
+           }
+          }
+
           posts.innerHTML += `
           <article class="post">
              <h3 class="post-title">${post.title}</h3>
              <i class="post-author-date">${post.author} | ${post.date} </i>
-             <p class="post-tag"><b>tags:</b> ${post.tags}</p>
+             <p class="post-tag"><b>tags:</b> ${tag()}</p>
              <p class="post-content">${content}...<a href="post.html?id=${post._id}" ><span class="read-more">read more</span></a></p>
           </article>
           `;  }
