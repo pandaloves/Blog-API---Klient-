@@ -150,7 +150,7 @@ select[multiple]:focus option:checked {
        max-width: 180px;
     }
     th, td {
-       width: 95px;
+       width: 94px;
        overflow: hidden;
     }
 }
@@ -159,7 +159,7 @@ select[multiple]:focus option:checked {
         max-width: 170px;
      }
      th, td {
-        width: 66px;
+        width: 64px;
      }
 }
 @media only screen and (max-width: 378px) {
@@ -167,7 +167,7 @@ select[multiple]:focus option:checked {
         max-width: 160px;
      }
      th, td {
-        width: 61px;
+        width: 58px;
      }
 }
 @media only screen and (max-width: 300px) {
