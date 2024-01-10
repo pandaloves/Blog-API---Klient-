@@ -32,7 +32,7 @@ async function fetchPosts() {
             posts.innerHTML += `
           <article class="post">
              <i class="post-author-date">${quote.author} | ${quote.dateAdded} </i>
-             <p class="post-tag"><b>tags:</b> ${tag()}</p>
+             <p class="post-tag"><b>Tags:</b> ${tag()}</p>
              <p class="post-content">${content}...<a href="post.html?id=${quote._id}" ><span class="read-more">read more</span></a></p>
           </article>
           `;  }

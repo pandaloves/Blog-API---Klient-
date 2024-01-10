@@ -41,7 +41,7 @@ async function fetchPost() {
     postElement.innerHTML = `
    
       <i class="author-date">${post.author} | ${post.dateAdded}</i>
-      <p class="tag"><b>tags:</b> ${tag()}</p>
+      <p class="tag"><b>Tags:</b> ${tag()}</p>
       <p class="content">${post.content}</p>
       <a href="index.html"><p class="back">&#8592; back</p><a>
     `;
