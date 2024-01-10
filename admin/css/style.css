@@ -67,52 +67,7 @@ main {
     border: 1px solid black;
     padding: 5px;
 }
-#new-post,
-#update-post {
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    margin: 0 auto 16px;
-}
-.create-label {
-    text-align: left;
-    line-height: 2em;
-}
-.create-input,
-#create-content-textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-#create-tags-select  {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid black;
-}
-.submit {
-    border: 1px solid rgb(5, 47, 237);
-    border-radius: 10px;
-    width: 100%;
-    height: 50px;
-    margin: 10px auto;
-    background-color: whitesmoke;
-    z-index: 999;
-}
-#create-back,
-#update-back {
-    font-size: 22px;
-    line-height: 2em;
-    text-align: center;
-}
 
-select[multiple]:focus option:checked {
-    background: rgb(5, 47, 237) linear-gradient(0deg, rgb(16, 9, 224) 0%, rgb(12, 38, 203) 100%);
-  }
-#create-content-textarea {
-    font-size: 16px;
-    color: rgb(50, 48, 48);
-}
 /*Media Queries for responsive design */
 @media only screen and (max-width: 1200px) {
     body {

@@ -1,11 +1,14 @@
 "use strict";
 // Fetch the specific post
+// Get the id parameter from the URL
+
+
 const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get('id');
+const postId = urlParams.get('id');
 
 async function fetchPost() {
       try {
-      const response = await fetch(`https://blog-api-assignment.up.railway.app/posts/${postId}`);
+      const response = await fetch(`https://api.quotable.io/quotes/${postId}`);
       if (!response.ok) {
         throw new Error('Opps, something whent wrong!')
     }
@@ -36,8 +39,8 @@ async function fetchPost() {
     }
 
     postElement.innerHTML = `
-      <h2 class="title">${post.title}</h2>
-      <i class="author-date">${post.author} | ${post.date}</i>
+   
+      <i class="author-date">${post.author} | ${post.dateAdded}</i>
       <p class="tag"><b>tags:</b> ${tag()}</p>
       <p class="content">${post.content}</p>
       <a href="index.html"><p class="back">&#8592; back</p><a>
